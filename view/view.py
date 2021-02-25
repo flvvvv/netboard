@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
-from models.message.models import Message
-from models.board.models import Board
-from models.user.models import User
+from models.models import Message
+from models.models import Board
+from models.models import User
 
 
 bp_ma_app = Blueprint('bp_ma_app', __name__)
