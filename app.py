@@ -14,12 +14,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 from flask_login import LoginManager
 
 from flask_restful import Api
-from resources.auth.auth import bp_auth_api, ApiLogin, ApiRegister
-from resources.message.message import bp_message_api, ApiMessage
-from resources.auth.google_auth import bp_google_auth, GoogleAuthApi
 
-from google.oauth2 import id_token
-from google.auth.transport import requests
 
 app = Flask(__name__)
 app.config.from_object(config)
